@@ -1,7 +1,7 @@
 # Units of Information converter
 [![dependency status](https://deps.rs/repo/github/Scarjit/UoI/status.svg)](https://deps.rs/repo/github/Scarjit/UoI)
 [![Travis CI](https://travis-ci.org/Scarjit/UoI.svg?branch=master)](https://travis-ci.org/Scarjit/UoI)
-[![Build status](https://ci.appveyor.com/api/projects/status/CHANGE_ME_LATER?svg=true)](https://ci.appveyor.com/project/Scarjit/UoI)
+[![Build status](https://ci.appveyor.com/api/projects/status/srm2weftra9n6xk7?svg=true)](https://ci.appveyor.com/project/Scarjit/uoi)
 [![Crates.io](https://img.shields.io/crates/v/CHANGE_ME_LATER)](https://crates.io/crates/CHANGE_ME_LATER)
 
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Scarjit/UoI/blob/master/LICENSE)
