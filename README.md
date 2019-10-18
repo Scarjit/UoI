@@ -1,4 +1,4 @@
-# ArmA 3 SQM Parser
+# Units of Information converter
 [![dependency status](https://deps.rs/repo/github/Scarjit/UoI/status.svg)](https://deps.rs/repo/github/Scarjit/UoI)
 [![Travis CI](https://travis-ci.org/Scarjit/UoI.svg?branch=master)](https://travis-ci.org/Scarjit/UoI)
 [![Build status](https://ci.appveyor.com/api/projects/status/CHANGE_ME_LATER?svg=true)](https://ci.appveyor.com/project/Scarjit/UoI)
@@ -10,9 +10,4 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/460490009f6d4a9cbf3cb1143d6a6e83)](https://www.codacy.com/manual/Scarjit/UoI?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Scarjit/UoI&amp;utm_campaign=Badge_Grade)
 
 Features:
-  * Reading SQM files to rust structs
-  * Dumping Structs as json
-  * Parsing back json files
-  * Writing structs back to SQM
-  
- 
+ * None
