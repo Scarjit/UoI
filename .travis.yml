@@ -1,0 +1,38 @@
+language: rust
+rust:
+  - nightly
+cache: cargo
+os:
+  - linux
+before_script:
+  - rustup toolchain install nightly-2019-10-04-x86_64-unknown-linux-gnu
+  - rustup default nightly-2019-10-04-x86_64-unknown-linux-gnu
+  - cargo install cargo-kcov --force
+  - rustup component add clippy-preview
+  - cargo install --force cargo-audit
+  - cargo update
+  
+script:
+  - cargo clippy --all-targets --all-features -- -W clippy::all -W clippy::pedantic -W clippy::restriction -W clippy::nursery -D warnings
+  - cargo build --verbose --all
+  - cargo test --verbose --all
+  - cargo doc --no-deps
+  - cargo generate-lockfile
+  - cargo audit
+
+after_success:
+  - if [[ "$TRAVIS_RUST_VERSION" == "nightly" ]] && [[ "$TRAVIS_OS_NAME" == "linux" ]]; then cargo kcov --print-install-kcov-sh | sh; fi
+  - if [[ "$TRAVIS_RUST_VERSION" == "nightly" ]] && [[ "$TRAVIS_OS_NAME" == "linux" ]]; then cargo kcov --coveralls; fi
+addons:
+  apt:
+    sources:
+      - kalakris-cmake
+    packages:
+      - cmake
+      - libcurl4-openssl-dev
+      - libiberty-dev
+      - libelf-dev
+      - libdw-dev
+      - binutils-dev
+      - libpcap-dev
+      - bison
