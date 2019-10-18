@@ -10,4 +10,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/460490009f6d4a9cbf3cb1143d6a6e83)](https://www.codacy.com/manual/Scarjit/UoI?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Scarjit/UoI&amp;utm_campaign=Badge_Grade)
 
 Features:
- * None
+ * Convert between:
+    * Bit (base 2)
+    * Trit (base 3)
+    * Hartley (base 10)
+    * Nat (base e)
