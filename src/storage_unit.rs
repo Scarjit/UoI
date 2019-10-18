@@ -52,8 +52,8 @@ impl Mul for StorageUnit{
 }
 
 impl StorageUnit {
-    pub fn new(bits: Option<f64>, hartleys: Option<f64>, nats: Option<f64>, trits: Option<f64>) -> StorageUnit{
-        StorageUnit{
+    pub fn new(bits: Option<f64>, hartleys: Option<f64>, nats: Option<f64>, trits: Option<f64>) -> Self{
+        Self{
             bit: bits.unwrap_or_default(),
             hartley: hartleys.unwrap_or_default(),
             nat: nats.unwrap_or_default(),
