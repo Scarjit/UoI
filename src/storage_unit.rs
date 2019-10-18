@@ -10,10 +10,10 @@ pub struct StorageUnit {
 }
 
 impl Add for StorageUnit{
-    type Output = StorageUnit;
+    type Output = Self;
 
-    fn add(self, rhs: Self) -> StorageUnit {
-        StorageUnit{
+    fn add(self, rhs: Self) -> Self {
+        Self{
             bit: self.bit + rhs.bit,
             hartley: self.hartley + rhs.hartley,
             nat: self.nat + rhs.nat,
@@ -23,10 +23,10 @@ impl Add for StorageUnit{
 }
 
 impl Sub for StorageUnit{
-    type Output = StorageUnit;
+    type Output = Self;
 
-    fn sub(self, rhs: Self) -> StorageUnit{
-        StorageUnit{
+    fn sub(self, rhs: Self) -> Self{
+        Self{
             bit: self.bit - rhs.bit,
             hartley: self.hartley - rhs.hartley,
             nat: self.nat - rhs.nat,
@@ -36,18 +36,18 @@ impl Sub for StorageUnit{
 }
 
 impl Div for StorageUnit{
-    type Output = StorageUnit;
+    type Output = Self;
 
-    fn div(self, rhs: Self) -> StorageUnit {
-        StorageUnit::new(Some(self.get_bits() / rhs.get_bits()), None, None, None)
+    fn div(self, rhs: Self) -> Self {
+        Self::new(Some(self.get_bits() / rhs.get_bits()), None, None, None)
     }
 }
 
 impl Mul for StorageUnit{
-    type Output = StorageUnit;
+    type Output = Self;
 
-    fn mul(self, rhs: Self) -> StorageUnit {
-        StorageUnit::new(Some(self.get_bits() * rhs.get_bits()), None, None, None)
+    fn mul(self, rhs: Self) -> Self {
+        Self::new(Some(self.get_bits() * rhs.get_bits()), None, None, None)
     }
 }
 
