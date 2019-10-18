@@ -12,11 +12,8 @@ install:
   - rustc -V
   - cargo -V
   - git submodule update --init --recursive
-  - cargo install --force cargo-audit
   - cargo update
 build: false
 test_script:
   - cargo build --verbose --all
   - cargo test --verbose --all
-  - cargo generate-lockfile
-  - cargo audit
