@@ -1,11 +1,11 @@
 
 #[cfg(test)]
 mod tests{
-    use UoI::storage_unit::StorageUnit;
-    use UoI::conversion::bit;
-    use UoI::conversion::hartley;
-    use UoI::conversion::nat;
-    use UoI::conversion::trit;
+    use uoi::storage_unit::StorageUnit;
+    use uoi::conversion::bit;
+    use uoi::conversion::hartley;
+    use uoi::conversion::nat;
+    use uoi::conversion::trit;
 
     #[test]
     fn test_hartley_nat_hartley(){
